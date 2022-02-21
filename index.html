@@ -70,6 +70,9 @@
     <title>バイナリーランド</title>
 </head>
 <stage></stage>
+<audio preload="auto" controls autoplay loop>
+    <source src="bgm1.mp3">
+</audio>
 <script>
     //0=歩ける場所　1 ブロック(歩けない場所)　2 ゴール　3 青ペンギン 4 ピンクペンギン　5 壁
     const state = [
@@ -190,6 +193,7 @@
         if (inputcode === kakushicode) {
             if (inputKakushiLen === kakushi.length) {
                 kakusiseikou = true;
+                console.log(kakusiseikou);
                 window.alert("裏モード" + kakusiTimers[kakusiTimer] + "COUNTDOWN　START");
                 inputKakushi.length = 1;
                 kakushicode.length = 1;
@@ -226,10 +230,6 @@
             }
         }
     }
-    function showSecond1() {
-
-    }
-
 </script>
 <p class="result">START</p>
 </body>
